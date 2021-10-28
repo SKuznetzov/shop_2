@@ -14,6 +14,7 @@ body {
     font-size: 16px;
     background-color: $divider-color;
     color: $secondary-text-color;
+    // Меню
     .navbar {
         padding: 0.3rem 5rem;
         border: 1px solid $primary-text-color;
@@ -31,5 +32,13 @@ body {
             color: $primary-color;
         }
     }
+    }
+    // Шапка
+    header {
+        background-image: url('../img/');
+        background-position: center ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 560px;
     }
 }
