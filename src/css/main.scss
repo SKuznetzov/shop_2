@@ -39,6 +39,23 @@ body {
         background-position: center ;
         background-repeat: no-repeat;
         background-size: cover;
-        min-height: 560px;
+        padding: 15rem 3rem;
+        p {
+            color: $secondary-text-color;
+        }
+        h4 {
+            font-size: 20px;
+            font-weight: bold;
+            color: $secondary-text-color;
+            > span {
+            color: $primary-color;
+            }
+        }
+        form {
+            border: double 1rem $primary-color-text;
+            div {
+            background-color: rgba($primary-color-text, 0.95);
+            }
+        }
     }
 }
