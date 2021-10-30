@@ -14,12 +14,15 @@ body {
     font-size: 16px;
     background-color: $divider-color;
     color: $secondary-text-color;
+    .container {
+        padding: 0;
+    }
     // заголовок
     .title {overflow: hidden;
     text-align: center;
     h4 {
         color: $secondary-text-color;
-        margin: 3rem 0;
+        margin: 2rem 0;
         padding: 2rem;
         font-size: 1.5em;
         display: inline-block;
@@ -131,6 +134,11 @@ body {
     }
     // категории
     .popcat {
+        background-image: url(../img/);
+        padding-bottom: 4rem;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         a {
             display: flex;
             align-items: center;
