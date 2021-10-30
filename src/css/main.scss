@@ -14,6 +14,39 @@ body {
     font-size: 16px;
     background-color: $divider-color;
     color: $secondary-text-color;
+    // заголовок
+    .title {overflow: hidden;
+    text-align: center;
+    h4 {
+        color: $secondary-text-color;
+        margin: 3rem 0;
+        padding: 2rem;
+        font-size: 1.5em;
+        display: inline-block;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+    &:before,
+    &:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 20%;
+        height: 1rem;
+        background-color: $primary-color;
+        position: relative;
+        opacity: 0.5;
+    }
+    &:before {
+        margin-left: -100%;
+        left: 1.5rem;
+    }
+    &:after {
+        margin-right: -100%;
+        right: 1.5rem;
+    }
+}
+
     // Кнопки
     .btn {
         border: 2px solid $primary-color;
@@ -96,4 +129,6 @@ body {
             }
         }
     }
+    // категории
+
 }
