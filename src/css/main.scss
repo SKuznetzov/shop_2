@@ -171,4 +171,33 @@ body {
         }
     }
     // Преимущества
+    .adv {
+        color: $primary-color-text;   
+        background: url('../img/adv.jpg') center center no-repeat; 
+        background-size: cover;
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            
+
+            background-image: linear-gradient(to left, $primary-color-dark 0%, $primary-color 50%, $primary-color-light 100%);
+            opacity: 0.5;
+        }
+        .row {
+            padding: 3rem 0;
+        } 
+        h6 {
+            margin: 1rem 0;
+            font-weight: bold;
+            font-size: 1em;
+        }
+        p {
+            font-size: 0.7em;
+        }
+    }
 }
