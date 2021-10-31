@@ -70,6 +70,18 @@ body {
             color: $primary-color-text;           
         }
     }
+    .btn-inverse {
+        border: 2px solid $primary-color;
+        background-color: transparent;
+        color: $primary-color;
+        border-radius: 0.5rem;
+        font-size: 1em;
+        padding: 1rem 2rem;
+        &:hover {
+            background-color: $primary-color;
+            color: $primary-color-text;           
+        }
+    }
     // Меню
     .navbar {
         padding: 0.3rem 5rem;
