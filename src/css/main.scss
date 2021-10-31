@@ -7,6 +7,13 @@ $primary-text-color:   #212121;
 $secondary-text-color: #757575;
 $divider-color:        #BDBDBD;
 
+@mixin background-img($src) {
+    background-image: url($src);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 html {
     font-size: 10px;
 }
@@ -84,10 +91,7 @@ body {
     }
     // Шапка
     header {
-        background-image: url('../img/');
-        background-position: center ;
-        background-repeat: no-repeat;
-        background-size: cover;
+        @include background-img('../img/');
         padding: 15rem 3rem;
         p {
             color: $secondary-text-color;
@@ -134,11 +138,9 @@ body {
     }
     // категории
     .popcat {
-        background-image: url(../img/);
+        @include background-img('../img/');
         padding-bottom: 4rem;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+ 
         a {
             display: flex;
             align-items: center;
@@ -173,8 +175,8 @@ body {
     // Преимущества
     .adv {
         color: $primary-color-text;   
-        background: url('../img/adv.jpg') center center no-repeat; 
-        background-size: cover;
+        @include background-img('../img/');
+        
         position: relative;
         &:before {
             content: "";
@@ -199,5 +201,10 @@ body {
         p {
             font-size: 0.7em;
         }
+    }
+    // Товары
+    .popgoods {
+        @include background-img('../img/');
+
     }
 }
