@@ -188,7 +188,7 @@ body {
   // Преимущества
   .adv {
     color: $primary-color-text;
-    @include background-img("../img/");
+    @include background-img("../img/adv.jpg");
 
     position: relative;
     &:before {
