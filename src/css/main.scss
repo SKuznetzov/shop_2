@@ -14,7 +14,7 @@ $divider-color: #bdbdbd;
   background-size: cover;
 }
 
-@mixin gradient-bg(){
+@mixin gradient-bg($color1,$color2,$color3){
   content: "";
   position: absolute;
   top: 0;
@@ -23,9 +23,9 @@ $divider-color: #bdbdbd;
   bottom: 0;
   background-image: linear-gradient(
     to left,
-    $primary-color-dark 0%,
-    $primary-color 50%,
-    $primary-color-light 100%
+    $color1 0%,
+    $color2 50%,
+    $color3 100%
   );
   opacity: 0.5;
 }
@@ -210,7 +210,7 @@ body {
 
     position: relative;
     &:before {
-
+      @include gradient-bg($primary-color-dark, $primary-color, $primary-color-text)
     }
     .row {
       padding: 3rem 0;
