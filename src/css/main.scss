@@ -248,6 +248,9 @@ body {
     .row {
       padding: 3rem 0;
     }
+    h5 {
+      font-size: 1.2rem;
+    }
     h6 {
       font-size: 1em;
     }
@@ -260,7 +263,8 @@ body {
       &:hover {
         transform: scale(1.2);
       }
-    }input {
+    }
+    input {
       width: 100%;
       padding: 1rem;
       background: transparent;
