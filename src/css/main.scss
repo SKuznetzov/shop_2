@@ -29,6 +29,18 @@ $divider-color: #bdbdbd;
   );
   opacity: 0.5;
 }
+
+@mixin input-color($placeholder-color) {
+  &::-webkit-input-placeholder {
+    color: $placeholder-color;
+  }
+  &:-moz-input-placeholder {
+    color: $placeholder-color;
+  }
+  &:-ms-input-placeholder {
+    color: $placeholder-color;
+  }
+}
 html {
   font-size: 10px;
 }
@@ -36,18 +48,6 @@ body {
   font-size: 16px;
   background-color: $divider-color;
   color: $secondary-text-color;
-  //text placeholder
-  input {
-    &::-webkit-input-placeholder {
-      color: $primary-color;
-    }
-    &:-moz-input-placeholder {
-      color: $primary-color;
-    }
-    &:-ms-input-placeholder {
-      color: $primary-color;
-    }
-  }
   .container {
     padding: 0;
   }
@@ -165,6 +165,7 @@ body {
         border-radius: 0.5rem;
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
+        @include input-color($primary-color)
       }
     }
   }
@@ -242,7 +243,30 @@ body {
     position: relative;
     @include background-img("../img/background.jpg");
     &:before {
-    @include gradient-bg($primary-color-dark, $primary-color, $primary-color-text)
+      @include gradient-bg($primary-color-dark, $primary-color, $primary-color-text)
+    }
+    .row {
+      padding: 3rem 0;
+    }
+    h6 {
+      font-size: 1em;
+    }
+    p {
+      font-size: 0.8em;
+    }
+    img {
+      margin-bottom: 1.5rem;
+      transition: all 0.5rem;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }input {
+      width: 100%;
+      padding: 1rem;
+      background: transparent;
+      border: 2px solid $primary-color-text;
+      margin-bottom: 1rem;
+      @include input-color($primary-color-text);
     }
   }
 }
