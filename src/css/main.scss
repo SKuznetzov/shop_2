@@ -238,4 +238,11 @@ body {
     }
   }
   // заказать замер
+  .form_zamer {
+    position: relative;
+    @include background-img("../img/background.jpg");
+    &:before {
+    @include gradient-bg($primary-color-dark, $primary-color, $primary-color-text)
+    }
+  }
 }
