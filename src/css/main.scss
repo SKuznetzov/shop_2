@@ -272,5 +272,10 @@ body {
       margin-bottom: 1rem;
       @include input-color($primary-color-text);
     }
+    button {
+      color: $primary-color-text;
+      border: 2px solid $primary-color-text;
+      padding: 1rem;
+    }
   }
 }
