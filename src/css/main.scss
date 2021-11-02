@@ -21,6 +21,18 @@ body {
   font-size: 16px;
   background-color: $divider-color;
   color: $secondary-text-color;
+  //text placeholder
+  input {
+    &::-webkit-input-placeholder {
+      color: $primary-color;
+    }
+    &:-moz-input-placeholder {
+      color: $primary-color;
+    }
+    &:-ms-input-placeholder {
+      color: $primary-color;
+    }
+  }
   .container {
     padding: 0;
   }
@@ -138,15 +150,6 @@ body {
         border-radius: 0.5rem;
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
-        &::-webkit-input-placeholder {
-          color: $primary-color;
-        }
-        &:-moz-input-placeholder {
-          color: $primary-color;
-        }
-        &:-ms-input-placeholder {
-          color: $primary-color;
-        }
       }
     }
   }
@@ -232,4 +235,5 @@ body {
       font-size: 1em;
     }
   }
+  // заказать замер
 }
