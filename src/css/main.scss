@@ -278,4 +278,8 @@ body {
       padding: 1rem;
     }
   }
+  .revievs {
+    @include background-img("../img/background.jpg");
+    padding-bottom: 3rem;
+  }
 }
