@@ -14,7 +14,7 @@ $divider-color: #bdbdbd;
   background-size: cover;
 }
 
-@mixin gradient-bg($color1,$color2,$color3){
+@mixin gradient-bg($color1, $color2, $color3) {
   content: "";
   position: absolute;
   top: 0;
@@ -165,7 +165,7 @@ body {
         border-radius: 0.5rem;
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
-        @include input-color($primary-color)
+        @include input-color($primary-color);
       }
     }
   }
@@ -211,7 +211,11 @@ body {
 
     position: relative;
     &:before {
-      @include gradient-bg($primary-color-dark, $primary-color, $primary-color-text)
+      @include gradient-bg(
+        $primary-color-dark,
+        $primary-color,
+        $primary-color-text
+      );
     }
     .row {
       padding: 3rem 0;
@@ -243,7 +247,11 @@ body {
     position: relative;
     @include background-img("../img/background.jpg");
     &:before {
-      @include gradient-bg($primary-color-dark, $primary-color, $primary-color-text)
+      @include gradient-bg(
+        $primary-color-dark,
+        $primary-color,
+        $primary-color-text
+      );
     }
     .row {
       padding: 3rem 0;
@@ -301,7 +309,7 @@ body {
       a {
         color: $primary-text-color;
         &:hover {
-        color: $primary-color;
+          color: $primary-color;
         }
       }
     }
